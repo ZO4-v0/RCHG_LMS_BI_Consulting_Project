@@ -419,9 +419,15 @@ RCHG_LMS_BI_Consulting_Project
 │   ├── RCHG_LMS_Analytics_Dataset.xlsx
 |   └── RCHG_LMS_Dataset_powerBI_Report.xlsx
 │
-├── RCHG_LMS_PowerBI_Report.pbix
+├── RDAMP_LMS_Analytics_RCHG_Powerbi.pbix
+|
+├── RDAMP_LMS_Analytics_RCHG_Presentation.pptx
+|
+├──RDAMP_LMS_Analytics_RCHG_Report.docx
 │
-├── Statistical Insights_Code_File.ipyb
+├──RDAMP_LMS_Analytics_RCHG_Stats.ipynb
+|
+├──RDAMP_LMS_Analytics_RCHG_Tracking.xlsx
 │
 └── README.md
 ```
