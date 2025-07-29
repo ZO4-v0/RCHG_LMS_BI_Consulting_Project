@@ -7,8 +7,51 @@ This project delivers a comprehensive analytics solution for **Rychtenshane Comm
 
 Our solution enables RCHG to monitor course completion rates, detect engagement patterns, evaluate skill development across teams, and forecast future training outcomes using real historical data.
 
+## Key Insights and Recommendations
+📌Trends & Performance Highlights
+  - **Training Engagement**: 2,000 courses taken with 80% completion; IT and Facilities lead (>82%), suggesting strong compliance habits.
+  - **Quarterly Patterns**: Training completions increased steadily until 2024 (peak: Q1 2024), then sharply declined in 2025, signaling a disruption.
+  - **Role-Based Gaps**: Network Technicians and Cleaners show high engagement (~85%); Payroll and Maintenance roles lag (~78–80%).
+  - **Skill Distribution**: Most roles average SkillScores near 3.0. Top: Maintenance Technicians (3.13); Bottom: Electricians (2.90).
+  - **Course Ratings**: “Health & Safety” (3.30) and “Customer Service” perform best; “Safeguarding Adults” (2.80) underperforms.
+  - **Skill Gaps**: Concentrated in IT and Compliance categories (309+ gaps), indicating need for improved retention/application.
+  - **Device & Time Use**: Balanced access across desktop/tablet/mobile (~33% each); average course time is 75 mins over 77 days.
+  - **Accessibility Inclusion**: 21% of learners use screen readers — these users score higher (81.08 vs. 79.88), proving strong LMS accessibility.
+  - **Forecasting Insight**: Completion trends show seasonality; forecasting expects mild recovery in 2026–2027.
+
+⚠️ Key Risks Identified
+  - **2025 Drop-off**: Completion fell to just 12 in Q1 2025 — potential policy or operational disruption.
+  - **20% Overdue Backlog**: Uncompleted mandatory courses may risk compliance and learner motivation.
+  - **Completion Delays**: Avg. 32 days to complete courses may reflect scheduling conflicts or low prioritization.
+  - **Field Role Disengagement**: Roles like Finance Analyst and Payroll Specialist show weak engagement and lower scores.
+  - **Course Underperformance**: Key compliance-related courses like “Data Protection” show poor outcomes despite importance.
+  - **System Inactivity Lag**: Long gaps between enrollment and last access suggest courses stay open beyond intended periods.
+
+🌱 Opportunities for Improvement
+  - **Early Warning System**: Monitor overdue trends and quarterly dips to trigger timely interventions.
+  - **Targeted Coaching**: Custom learning for low-performing roles (e.g., workshops, supervisor nudges, blended training).
+  - **Faster Completion Campaigns**: Set mini-deadlines and reward early completions to reduce 32-day average.
+  - **Replicate High Performers**: Analyze successful practices in IT & Facilities to scale across departments.
+  - **Refine Low-Performing Content**: Revise poorly rated courses with modern, scenario-based or gamified content.
+  - **Mobile Optimization**: Leverage the 32% mobile usage by designing mobile-first content for greater accessibility.
+  - **Site-Based Strategy**: Civic Centre Hub shows the highest average score (3.06); model its practices across other locations.
+  - **Dashboard Adoption**: Real-time monitoring through Power BI supports proactive, data-driven HR planning.
+  - **Course Optimization Using Forecast and Regression Models**: Use forecasting outputs to plan course delivery around seasonal dips and adjust curriculum based on regression insights—refining course pacing, duration, or interactivity to enhance outcomes.
+
 ---
 ![Dashboard Home Page](Images/Dashboard/DashboardHomePage.png)
+
+---
+## 📑 Table of Contents
+
+- [Key Insights and Recommendations](#key-insights-and-recommendations)
+- [Dashboard Page Descriptions](#-dashboard-page-descriptions)
+- [DAX Columns and Measures](#-dax-columns-and-measures)
+- [Statistical Insights](#statistical-insights)
+- [Team Members and GitHub Handles](#team-members-and-github-handles)
+- [Files in this Repo](#files-in-this-repo)
+
+---
 
 ## 📁 Dashboard Page Descriptions
 
@@ -158,9 +201,9 @@ VAR FlagCounts =
 ```
 ---
 
-## 📊Statistical Insights:
+## 📊Statistical Insights
 
-## Summary of Statistical Techniques Used
+### Summary of Statistical Techniques Used
 | Technique         | Library        | Purpose                                                             |
 | ----------------- | -------------- | ------------------------------------------------------------------- |
 | Seasonal ARIMA (SARIMA)         | `pmdarima`    | Forecast monthly training completions for the next 4 quarters       |
@@ -260,7 +303,7 @@ The input features used in both models were:
 
 ---
 
-### Interpretation
+#### Interpretation
 
 **DurationMinutes**:
 - In the **skill-based model**, training time had a **positive** coefficient (0.0007), indicating a minor improvement in skill scores with additional time.
@@ -287,7 +330,7 @@ The following scatter plot compares actual vs predicted performance scores:
 
 We conducted ANOVA tests to assess whether the mean performance scores differ significantly across teams.
 
-### ANOVA Results Summary
+#### ANOVA Results Summary
 
 | Skill                      | F-statistic | P-value | Result                                 |
 |---------------------------|-------------|---------|----------------------------------------|
@@ -298,11 +341,11 @@ We conducted ANOVA tests to assess whether the mean performance scores differ si
 
 > **Conclusion**: No statistically significant differences were found between teams in any of the skill categories.
 
-### Performance Score Distribution by Team
+#### Performance Score Distribution by Team
 
 ![Boxplot of Performance Scores](Images/Statistical_Insights/Boxplot_of_Performance_Scores.png)
 
-### Average Skill Scores per Team
+#### Average Skill Scores per Team
 
 ![Heatmap of Skill Scores](Images/Statistical_Insights/Heatmap_of_Skill_Scores.png)
 
@@ -315,26 +358,8 @@ We conducted ANOVA tests to assess whether the mean performance scores differ si
 
 - Identifying disparities in team skill development (ANOVA)
 
-
-🎯 How Our Solution Meets RCHG's Goals
-
-✅ Compliance Insight
-→ Visual tracking of mandatory course completions and overdue patterns.
-
-✅ Learning Engagement
-→ Device usage and training duration insights per role and location.
-
-✅ Skill Development Evaluation
-→ Skill score distribution across teams with statistical validation.
-
-✅ Predictive Readiness
-→ 12-month forecast of training completions to inform planning.
-
-✅ Actionable Recommendations
-→ Strategic suggestions included in the PDF report to close skill gaps and boost LMS engagement.
-
 ---
-## 👥 Team Members & GitHub Handles
+## 👥Team Members and GitHub Handles
 - Joefer Cosio . – Project Organizer, Power BI Reporting, Github Submission 
 
 GitHub: [@ZO4-v0](https://github.com/ZO4-v0)
@@ -351,7 +376,7 @@ GitHub: [@vibvinit](https://github.com/vibvinit)
 
 GitHub: [@MaruPalacio](https://github.com/MaruPalacio)
 
-## 📂 Files in this Repo
+## 📂Files in this Repo
 
 ```
 RCHG_LMS_BI_Consulting_Project
