@@ -336,23 +336,25 @@ We conducted ANOVA tests to assess whether the mean performance scores differ si
 ---
 ## 👥 Team Members & GitHub Handles
 - Joefer Cosio . – Project Organizer, Power BI Reporting, Github Submission 
+
 GitHub: [@ZO4-v0](https://github.com/ZO4-v0)
 
 - Kousar Saleem – Statistical Analysis, Documentation, data cleaning, Report Writing 
+
 GitHub: [@Kousarsaleem32](https://github.com/Kousarsaleem32)
 
 - Vineet Khurana  – Data Modelling, Report Creation 
+
 GitHub: [@vibvinit](https://github.com/vibvinit)
 
 - Mariel Palacio – Statistical Analysis, Documentation
+
 GitHub: [@MaruPalacio](https://github.com/MaruPalacio)
 
 ## 📂 Files in this Repo
 
 ```
 RCHG_LMS_BI_Consulting_Project
-├── Data
-│   └── LMS_Cleaned_dataset_Vineet.xlsx
 │
 ├── Images
 │   ├── Dashboard
@@ -363,15 +365,38 @@ RCHG_LMS_BI_Consulting_Project
 │   │   ├── PerformanceAnalysis.png
 │   │   └── StatisticalInsights.png
 │   │
+│   ├── Icons
+│   │   ├── alert.png
+│   │   ├── back-in-time.png
+│   │   ├── calendar.png
+│   │   ├── checklist.png
+│   │   ├── clock.png
+│   │   ├── danger.png
+│   │   ├── done.png
+│   │   ├── management.png
+│   │   ├── online-learning.png
+│   │   ├── overdue.png
+│   │   ├── responsive.png
+│   │   ├── score.png
+│   │   ├── skill.png
+│   │   └── united.png
+│   │
 │   └── Statistical_Insights
-│       ├── Actual_vs_Predicted_Performance.png
+│       ├── Actual_vs_Predicted_Performance_Score.png
+│       ├── Actual_vs_Predicted_Performance_Score_Using_Only_Scores.png
+│       ├── Actual_vs_Predicted_Performance_Score_Using_Skill_Scores.png
 │       ├── Boxplot_of_Performance_Scores.png
 │       ├── Heatmap_of_Skill_Scores.png
 │       ├── QuarterlyTraining.png
-│       └── Quarterly_Training_Completion.png
+│       └── Quarterly_Training_Completions_Actual_vs_SARIMA_Forecast.png
 │
 ├── raw data
-│   └── RCHG_LMS_Analytics_Dataset.xlsx
+│   ├── RCHG_LMS_Analytics_Dataset.xlsx
+|   └── RCHG_LMS_Dataset_powerBI_Report.xlsx
+│
+├── RCHG_LMS_PowerBI_Report.pbix
+│
+├── Statistical Insights_Code_File.ipyb
 │
 └── README.md
 ```
