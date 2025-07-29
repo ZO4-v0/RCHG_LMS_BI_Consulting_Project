@@ -271,7 +271,7 @@ We conducted ANOVA tests to assess whether the mean performance scores differ si
 - Joefer Cosio . – Project Organizer, Power BI Reporting, Github Submission 
 GitHub: [@ZO4-v0](https://github.com/ZO4-v0)
 
-- Kousar Saleem – Dashboard development, data cleaning, device & accessibility analysis
+- Kousar Saleem – Statistical Analysis, Documentation, data cleaning, Report Writing 
 GitHub: [@Kousarsaleem32](https://github.com/Kousarsaleem32)
 
 - Vineet Khurana  – Data Modelling, Report Creation 
