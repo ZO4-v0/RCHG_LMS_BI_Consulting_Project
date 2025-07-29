@@ -229,41 +229,6 @@ Refer to: [`Quarterly Training Completions: Actual vs SARIMA Forecast (2023–20
 
 ### ⏳ Regression Analysis: Impact of Training Time and Frequency on Performance Scores
 
-
-To evaluate the relationship between training engagement and employee performance, we performed a linear regression using:
-
-- **DurationMinutes**: Total time (in minutes) an employee spent on completed trainings.
-- **CourseFrequency**: Number of completed training courses per employee.
-
-The **target variable** was the **Combined Performance Score**, calculated as the average of:
-- Communication Skill Score
-- Technical Efficiency Score
-- Teamwork Score
-- Normalized Course Score (scaled to a 0–5 range)
-
-#### Regression Results
-
-| Term                  | Coefficient |
-|-----------------------|-------------|
-| Intercept             | 3.14        |
-| DurationMinutes       | 0.0005      |
-| CourseFrequency       | 0.0147      |
-
-#### Interpretation
-
-- The **positive coefficient** for `DurationMinutes` is 0.0005, meaning that for every additional minute spent in training, the combined performance score increases by 0.0005 points suggests that longer training durations are slightly associated with better performance outcomes.
-- The **positive coefficient** for `CourseFrequency` is 0.0147, indicating that each additional course completed is associated with an increase of 0.0147 points indicates that employees completing more courses tend to score higher on performance metrics.
-- Though the coefficients are small, the direction of influence is meaningful and can inform targeted training interventions.
-
-
-#### Model Visualization
-
-The following scatter plot compares actual vs predicted performance scores:
-
-![Actual vs Predicted Performance Score](Images/Statistical_Insights/Actual_vs_Predicted_Performance_Score.png)
-
-### ⏳ Regression Analysis: Impact of Training Time and Frequency on Performance Scores
-
 This analysis investigates how two key training variables training duration and course frequency influence employee performance. We applied linear regression using two approaches:
 
 1. **Raw Performance Score** (out of 100)  
