@@ -107,6 +107,54 @@ SkillScore_x =
     (LMSFact[SkillScore_Communication] + 
      LMSFact[SkillScore_Teamwork] + 
      LMSFact[SkillScore_TechEfficiency]) / 3
+Measures 
+%CourseCompletion = [CourseCompleted]/[Totalcoursecount]
+%Mandatorycoursecompletion = [Mandatorycoursecompleted]/[Mandatorycoursecount]
+%totaloverdue = [CourseOverdue]/[Totalcoursecount]
+AverageDuration = AVERAGE(LMSFact[DurationMinutes])
+AverageFeedback = AVERAGE(Feedback[FeedbackRating])
+Averagescore = AVERAGE(LMSFact[Score])
+AverageSkillscore = (AVERAGE(LMSFact[SkillScore_Communication])+AVERAGE(LMSFact[SkillScore_Teamwork])+AVERAGE(LMSFact[SkillScore_TechEfficiency])/3)
+CourseCompleted = CALCULATE(COUNT(LMSFact[CourseID]), LMSFact[CompletionStatus]=1)
+CourseOverdue = [Totalcoursecount] - [CourseCompleted]
+Mandatorycoursecompleted = CALCULATE([Mandatorycoursecount],LMSFact[CompletionStatus]=1)
+Mandatorycoursecount = CALCULATE(COUNT(LMSFact[CourseID]),Mandatory[MandatoryID]=1)
+Review frequency = DISTINCTCOUNT(Course[CourseID])
+Skillgapcount = CALCULATE(COUNT(LMSFact[SkillGapFlag]),LMSFact[SkillGapFlag]=1)
+Time Spent (in hrs) = DIVIDE(SUM(LMSFact[DurationMinutes]),60)
+Totalcoursecount = CALCULATE(COUNT(LMSFact[CourseID]))
+TotalSkillscore = SUM(LMSFact[SkillScore_Communication])+SUM(LMSFact[SkillScore_Teamwork])+SUM(LMSFact[SkillScore_TechEfficiency])
+Rank Value (category) = 
+      VAR _rank_top =
+          RANKX ( ( ALLSELECTED ( Role[RoleID] ) ), [%CourseCompletion],, DESC, DENSE )
+      VAR _rank_bottom =
+          RANKX ( ( ALLSELECTED ( Role[RoleID] ) ), [%CourseCompletion],, ASC, DENSE )
+      VAR _result =
+          IF (
+              _rank_top <= 5,
+              [%CourseCompletion],
+              IF ( _rank_bottom <= 5, [%CourseCompletion], BLANK () )
+          )
+      RETURN
+          _result
+
+Top Employee By Course Count = 
+VAR FlagCounts =
+        SUMMARIZE (
+            Employee,
+            Employee[EmployeeFullName],
+            "FlagCount", CALCULATE ( COUNTROWS ( FILTER ( LMSFact, LMSFact[CompletionStatus] = 1 ) ) )
+        )
+    VAR MaxFlagCount =
+        MAXX ( FlagCounts, [FlagCount] )
+    VAR TopEmployee =
+        CALCULATETABLE (
+            FILTER ( FlagCounts, [FlagCount] = MaxFlagCount ),
+            TOPN ( 1, FlagCounts, [FlagCount], DESC )
+        )
+    RETURN
+        SELECTCOLUMNS ( TopEmployee, "TopEmployee", Employee[EmployeeFullName] )
+
 ```
 ---
 
