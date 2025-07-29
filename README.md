@@ -8,7 +8,7 @@ This project delivers a comprehensive analytics solution for **Rychtenshane Comm
 Our solution enables RCHG to monitor course completion rates, detect engagement patterns, evaluate skill development across teams, and forecast future training outcomes using real historical data.
 
 ---
-![Dashboard Home Page](./d3a5dd66-fe71-407d-85fe-972a1bc0dff4.png)
+![Dashboard Home Page](Images/Dashboard/DashboardHomePage.png)
 
 ## 📁 Dashboard Page Descriptions
 
@@ -22,7 +22,7 @@ Our solution enables RCHG to monitor course completion rates, detect engagement 
   - Top 5 & Bottom 5 Roles by Course Completion: Detect roles that are high-performing in training engagement or at risk.
 - *Slicers / Filters* : Department, Location, Mandatory vs. Regular Courses, Date Range
 
-Refer to: [`Compliance & Training Summary`](Link)
+Refer to: [`Compliance & Training Summary`](Images/Dashboard/Compliance&TrainingSummary.png)
 
 ### 2. **Performance Analysis**
 - *KPI Cards:* 
@@ -31,7 +31,7 @@ Refer to: [`Compliance & Training Summary`](Link)
   - Skill Gap Insights: Visuals highlight where skill development is lagging across roles, courses, teams, categories, and locations - helping identify underperforming areas and prioritize targeted upskilling.
 - *Slicers / Filters* : Department, Location, Mandatory vs. Regular Courses, Date Range
 
-Refer to: [`Performance Analysis`](Link)
+Refer to: [`Performance Analysis`](Images/Dashboard/PerformanceAnalysis.png)
 
 ### 3. **Engagement Patterns**
 - *KPI Cards:* 
@@ -44,7 +44,7 @@ Refer to: [`Performance Analysis`](Link)
   - Enrollment vs. Last Access (Days): Analyzed how long users take to revisit courses, with mean and median lines for comparison.
 - *Slicers / Filters* : Department, Location, Mandatory vs. Regular Courses, Date Range
 
-Refer to: [`Engagement Patterns`](Link)
+Refer to: [`Engagement Patterns`](Images/Dashboard/EngagementPatterns.png)
 
 ### 4. **Statistical Insights**
 - *KPI Cards:* Retained, this provide continuity while interpreting deeper analytical results.
@@ -57,7 +57,7 @@ Refer to: [`Engagement Patterns`](Link)
     - Employee Participation & Score Comparison: Comparative bar chart showing distinct employees using screen readers vs. not, along with their average performance scores.]
 
 
-Refer to: [`Statistical Insights`](Link)
+Refer to: [`Statistical Insights`](Images/Dashboard/StatisticalInsights.png)
 
 ### 5. **Accessibility Overview**
 - *KPI Cards:* Retained, this provide continuity while interpreting deeper analytical results.
@@ -67,7 +67,7 @@ Refer to: [`Statistical Insights`](Link)
   - Regression Analysis: Training Time & Frequency vs. Score, Scatterplot with regression line modeling the relationship between `Total training time,Number of trainings, Performance scores` Aimed at understanding how effort translates into results.
   - ANOVA Results: Skill Scores Across Teams: Compare training time geographically. Boxplot of skill score distributions per team Heatmap showing scores per team. Confirming that no statistically significant differences were found between teams. Therefore, we do not reject the null hypothesis.e
 
-Refer to: [`Accessibility Overview`](Link)
+Refer to: [`Accessibility Overview`](Images/Dashboard/AccessibilityOverview.png)
 
 ---
 ## 📐 DAX Columns and Measures
@@ -130,7 +130,7 @@ In this analysis, we modeled and forecasted the number of quarterly training com
 - Forecasted Quarter: Q3 2025 (2025-09-30)
 - Predicted Completed Courses: 27.46
 
-![Quarterly Training Completions Forecast (SARIMA)](Quarterly Training.png)
+![Quarterly Training Completions Forecast (SARIMA)](Images/Statistical_Insights/QuarterlyTraining.png)
 
 ---
 
@@ -168,7 +168,7 @@ Comparison of actual training completions versus SARIMA predictions:
 | 2025-03-31    | 10     | 29.7      |
 | 2025-06-30    | 7      | 43.3      |
 
-Refer to: [`Quarterly Training Completions: Actual vs SARIMA Forecast (2023–2025)`](Link)
+Refer to: [`Quarterly Training Completions: Actual vs SARIMA Forecast (2023–2025)`](Images/Statistical_Insights/Quarterly_Training_Completions_Actual_vs_SARIMA_Forecast.png)
 
 ---
 
@@ -213,7 +213,7 @@ The **target variable** was the **Combined Performance Score**, calculated as th
 
 The following scatter plot compares actual vs predicted performance scores:
 
-![Actual vs Predicted Performance Score](./d3a5dd66-fe71-407d-85fe-972a1bc0dff4.png)
+![Actual vs Predicted Performance Score](Images/Statistical_Insights/Actual_vs_Predicted_Performance_Score.png)
 
 
 ### 🧑‍💻 ANOVA Analysis: Compare mean skill scores across multiple departments to identify statistically significant performance disparities
@@ -233,11 +233,11 @@ We conducted ANOVA tests to assess whether the mean performance scores differ si
 
 ### Performance Score Distribution by Team
 
-![Boxplot of Performance Scores](./51dbb4b4-5b44-4ad8-ae31-fcce4deca5be.png)
+![Boxplot of Performance Scores](Images/Statistical_Insights/Boxplot_of_Performance_Scores.png)
 
 ### Average Skill Scores per Team
 
-![Heatmap of Skill Scores](./1956b7d1-da2e-4c10-a87e-e9ea81f454e1.png)
+![Heatmap of Skill Scores](Images/Statistical_Insights/Heatmap_of_Skill_Scores.png)
 
 ---
 ✅ These methods support RCHG’s goals of:
@@ -281,14 +281,30 @@ GitHub: [@vibvinit](https://github.com/vibvinit)
 GitHub: [@MaruPalacio](https://github.com/MaruPalacio)
 
 ## 📂 Files in this Repo
-RCHG_LMS_Analytics_Dataset.xlsx – Raw dataset
 
-forecasting_model.ipynb – Prophet time series notebook
-
-regression_analysis.ipynb – Linear regression modeling
-
-anova_analysis.ipynb – ANOVA and statistical tests
-
-PowerBI_Dashboard.pbix – Final dashboard file
-
-Business_Insight_Report.pdf – Executive summary and strategic recommendations
+```
+RCHG_LMS_BI_Consulting_Project
+├── Data
+│   └── LMS_Cleaned_dataset_Vineet.xlsx
+│
+├── Images
+│   ├── Dashboard
+│   │   ├── AccessibilityOverview.png
+│   │   ├── Compliance&TrainingSummary.png
+│   │   ├── DashboardHomePage.png
+│   │   ├── EngagementPatterns.png
+│   │   ├── PerformanceAnalysis.png
+│   │   └── StatisticalInsights.png
+│   │
+│   └── Statistical_Insights
+│       ├── Actual_vs_Predicted_Performance.png
+│       ├── Boxplot_of_Performance_Scores.png
+│       ├── Heatmap_of_Skill_Scores.png
+│       ├── QuarterlyTraining.png
+│       └── Quarterly_Training_Completion.png
+│
+├── raw data
+│   └── RCHG_LMS_Analytics_Dataset.xlsx
+│
+└── README.md
+```
