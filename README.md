@@ -299,17 +299,22 @@ The input features used in both models were:
 
 **DurationMinutes**:
 - In the **skill-based model**, training time had a **positive** coefficient (0.0007), indicating a minor improvement in skill scores with additional time.
-- In contrast, the **raw score model** produced a **negative** coefficient (-0.0001), suggesting that longer durations might not translate into better performance—possibly due to distractions, content complexity, or inefficiencies.
+- In contrast, the **raw score model** produced a **negative** coefficient (-0.0001), suggesting that longer durations might not translate into better performance possibly due to distractions, content complexity, or inefficiencies.
   
 **CourseFrequency**:
 - In the **raw score model**, the effect was **strongly positive** (0.2553), showing that employees completing more courses tend to score significantly higher.
-- The **skill-based model**, however, revealed a **slightly negative** effect (-0.0041), suggesting potential diminishing returns in skill acquisition for high-volume learners.
+- The **skill-based model**, however, revealed a **slightly negative** effect (-0.0041), suggesting potential diminishing returns in skill acquisition for high volume learners.
 
 > **Insight**:  
-> While course repetition boosts raw scores, improvement in real-world skills may require deeper or more contextual learning approaches. Also, longer training time alone doesn't guarantee performance gains—it could signal confusion, multitasking, or lack of engagement.
+> While course repetition boosts raw scores, improvement in real-world skills may require deeper or more contextual learning approaches. Also, longer training time alone doesn't guarantee performance gains it could signal confusion, multitasking, or lack of engagement.
 
 ---
 
+#### Model Visualization
+
+The following scatter plot compares actual vs predicted performance scores:
+
+![Actual vs Predicted Performance Score](Images/Statistical_Insights/Actual_vs_Predicted_Performance_Score.png)
 
 
 ### 🧑‍💻 ANOVA Analysis: Compare mean skill scores across multiple departments to identify statistically significant performance disparities
