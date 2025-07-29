@@ -279,7 +279,7 @@ The input features used in both models were:
 
 The following scatter plot compares actual vs predicted performance scores:
 
-![Actual vs Predicted Performance Score](Images/Statistical_Insights/Actual_vs_Predicted_Performance_Score_Using_Skill_Score.png)
+![Actual vs Predicted Performance Score](Images/Statistical_Insights/Actual_vs_Predicted_Performance_Score_Using_Skill_Scores.png)
 ![Actual vs Predicted Performance Score_1](Images/Statistical_Insights/Actual_vs_Predicted_Performance_Score_Using_Only_Scores.png)
 
 
