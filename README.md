@@ -256,12 +256,60 @@ The **target variable** was the **Combined Performance Score**, calculated as th
 - Though the coefficients are small, the direction of influence is meaningful and can inform targeted training interventions.
 
 
-
 #### Model Visualization
 
 The following scatter plot compares actual vs predicted performance scores:
 
 ![Actual vs Predicted Performance Score](Images/Statistical_Insights/Actual_vs_Predicted_Performance_Score.png)
+
+### ⏳ Regression Analysis: Impact of Training Time and Frequency on Performance Scores
+
+This analysis investigates how two key training variables training duration and course frequency influence employee performance. We applied linear regression using two approaches:
+
+1. **Raw Performance Score** (out of 100)  
+2. **Combined Skill Score** (average of Communication, Technical Efficiency, and Teamwork; scaled 0–5)
+
+The input features used in both models were:
+- **DurationMinutes**: Total time (in minutes) an employee spent on completed trainings  
+- **CourseFrequency**: Total number of completed training courses by an employee  
+
+---
+
+#### Regression Using Raw Performance Score (0–100 Scale)
+
+| Term              | Coefficient |
+|-------------------|-------------|
+| Intercept         | 79.55       |
+| DurationMinutes   | -0.0001     |
+| CourseFrequency   | 0.2553      |
+
+---
+
+#### Regression Using Combined Skill Score (0–5 Scale)
+
+| Term              | Coefficient |
+|-------------------|-------------|
+| Intercept         | 2.97        |
+| DurationMinutes   | 0.0007      |
+| CourseFrequency   | -0.0041     |
+
+---
+
+### Interpretation
+
+**DurationMinutes**:
+- In the **skill-based model**, training time had a **positive** coefficient (0.0007), indicating a minor improvement in skill scores with additional time.
+- In contrast, the **raw score model** produced a **negative** coefficient (-0.0001), suggesting that longer durations might not translate into better performance—possibly due to distractions, content complexity, or inefficiencies.
+  
+**CourseFrequency**:
+- In the **raw score model**, the effect was **strongly positive** (0.2553), showing that employees completing more courses tend to score significantly higher.
+- The **skill-based model**, however, revealed a **slightly negative** effect (-0.0041), suggesting potential diminishing returns in skill acquisition for high-volume learners.
+
+> **Insight**:  
+> While course repetition boosts raw scores, improvement in real-world skills may require deeper or more contextual learning approaches. Also, longer training time alone doesn't guarantee performance gains—it could signal confusion, multitasking, or lack of engagement.
+
+---
+
 
 
 ### 🧑‍💻 ANOVA Analysis: Compare mean skill scores across multiple departments to identify statistically significant performance disparities
