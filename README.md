@@ -7,6 +7,18 @@ This project delivers a comprehensive analytics solution for **Rychtenshane Comm
 
 Our solution enables RCHG to monitor course completion rates, detect engagement patterns, evaluate skill development across teams, and forecast future training outcomes using real historical data.
 
+---
+## 📑 Table of Contents
+
+- [Key Insights and Recommendations](#key-insights-and-recommendations)
+- [Dashboard Page Descriptions](#-dashboard-page-descriptions)
+- [DAX Columns and Measures](#-dax-columns-and-measures)
+- [Statistical Insights](#statistical-insights)
+- [Team Members and GitHub Handles](#team-members-and-github-handles)
+- [Files in this Repo](#files-in-this-repo)
+
+---
+
 ## Key Insights and Recommendations
 📌Trends & Performance Highlights
   - **Training Engagement**: 2,000 courses taken with 80% completion; IT and Facilities lead (>82%), suggesting strong compliance habits.
@@ -41,17 +53,7 @@ Our solution enables RCHG to monitor course completion rates, detect engagement 
 ---
 ![Dashboard Home Page](Images/Dashboard/DashboardHomePage.png)
 
----
-## 📑 Table of Contents
 
-- [Key Insights and Recommendations](#key-insights-and-recommendations)
-- [Dashboard Page Descriptions](#-dashboard-page-descriptions)
-- [DAX Columns and Measures](#-dax-columns-and-measures)
-- [Statistical Insights](#statistical-insights)
-- [Team Members and GitHub Handles](#team-members-and-github-handles)
-- [Files in this Repo](#files-in-this-repo)
-
----
 
 ## 📁 Dashboard Page Descriptions
 
