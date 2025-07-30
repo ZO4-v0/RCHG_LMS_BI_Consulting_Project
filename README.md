@@ -428,6 +428,8 @@ RCHG_LMS_BI_Consulting_Project
 ├──RDAMP_LMS_Analytics_RCHG_Stats.ipynb
 |
 ├──RDAMP_LMS_Analytics_RCHG_Tracking.xlsx
+|
+├──RDAMP_LMS_Analytics_RCHG_Report.pdf
 │
 └── README.md
 ```
