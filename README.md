@@ -57,6 +57,14 @@ Our solution enables RCHG to monitor course completion rates, detect engagement 
 
 ## 📁 Dashboard Page Descriptions
 
+### 1. **KPIs**
+- *Visuals*
+  - Completion & Overdue Rate By Employee and By Teams 
+  - Score & Skill Gap Flag By Employee and By Teams
+  - Learning Hours By Employee and By Teams
+  - Average Completion Time ( Days )
+  - Course Feedback Scores
+Refer to: [`KPIs`](Images/Dashboard/KPIs.png)
 ### 1. **Compliance & Training Summary**
 - *KPI Cards:* 
   > Total Courses Taken, Completed Courses, Mandatory Courses Completed, Overdue Courses, Average Days to Complete, Average Duration (Mins)
@@ -385,6 +393,7 @@ RCHG_LMS_BI_Consulting_Project
 │
 ├── Images
 │   ├── Dashboard
+    |   ├── KPIs.png
 │   │   ├── AccessibilityOverview.png
 │   │   ├── Compliance&TrainingSummary.png
 │   │   ├── DashboardHomePage.png
